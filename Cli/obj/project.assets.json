@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "InMemoryRepositories/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/InMemoryRepositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InMemoryRepositories.dll": {}
+        }
+      },
+      "RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "InMemoryRepositories/1.0.0": {
+      "type": "project",
+      "path": "../InMemoryRepositories/InMemoryRepositories.csproj",
+      "msbuildProject": "../InMemoryRepositories/InMemoryRepositories.csproj"
+    },
+    "RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryContracts/RepositoryContracts.csproj",
+      "msbuildProject": "../RepositoryContracts/RepositoryContracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Entities >= 1.0.0",
+      "InMemoryRepositories >= 1.0.0",
+      "RepositoryContracts >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/salemanabdirashid/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /Cli/Cli.csproj",
+      "projectName": "Cli",
+      "projectPath": "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /Cli/Cli.csproj",
+      "packagesPath": "/Users/salemanabdirashid/.nuget/packages/",
+      "outputPath": "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /Cli/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/salemanabdirashid/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /Entities/Entities.csproj": {
+              "projectPath": "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /Entities/Entities.csproj"
+            },
+            "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/InMemoryRepositories.csproj": {
+              "projectPath": "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/InMemoryRepositories.csproj"
+            },
+            "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /RepositoryContracts/RepositoryContracts.csproj": {
+              "projectPath": "/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /RepositoryContracts/RepositoryContracts.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.19, 8.0.19]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[8.0.19, 8.0.19]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.19, 8.0.19]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Entities is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project Entities supports: net9.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "Entities",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project InMemoryRepositories is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project InMemoryRepositories supports: net9.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "InMemoryRepositories",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project RepositoryContracts is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project RepositoryContracts supports: net9.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "RepositoryContracts",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

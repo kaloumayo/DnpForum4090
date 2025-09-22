@@ -1,0 +1,17 @@
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/InMemoryRepositories.deps.json
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/InMemoryRepositories.dll
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/InMemoryRepositories.pdb
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/Entities.dll
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/RepositoryContracts.dll
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/Entities.pdb
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/bin/Debug/net9.0/RepositoryContracts.pdb
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.csproj.AssemblyReference.cache
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.AssemblyInfoInputs.cache
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.AssemblyInfo.cs
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.csproj.CoreCompileInputs.cache
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemory.C4D1EAE1.Up2Date
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.dll
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/refint/InMemoryRepositories.dll
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/InMemoryRepositories.pdb
+/Users/salemanabdirashid/Documents/DnpAssignment/DnpForum /InMemoryRepositories/obj/Debug/net9.0/ref/InMemoryRepositories.dll
