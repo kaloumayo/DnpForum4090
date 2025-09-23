@@ -6,6 +6,7 @@ namespace Cli.UI.ManageUsers;
 
 public class ManageUsersView
 {
+    
     private readonly IUserRepository _users;
 
     public ManageUsersView(IUserRepository users) => _users = users;
