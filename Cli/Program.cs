@@ -8,9 +8,12 @@ using Cli.UI.ManageUsers;
 using Cli.UI.ManagePosts;
 
 // Top-level async "Main"
-IUserRepository userRepo = new UserInMemoryRepository();
-IPostRepository postRepo = new PostInMemoryRepository();
+using FileRepositories; // tilføjet
+
+IUserRepository userRepo = new UserFileRepository();           // nu på FIL
+IPostRepository postRepo = new PostInMemoryRepository();       
 ICommentRepository commentRepo = new CommentInMemoryRepository();
+
 
 // Kør hovedmenu
 await RunMenuAsync();
