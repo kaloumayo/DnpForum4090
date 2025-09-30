@@ -1,3 +1,5 @@
+using System;
+using System.Threading.Tasks;
 using Entities;
 using RepositoryContracts;
 
@@ -17,15 +19,35 @@ public class CreatePostView
     public async Task RunAsync()
     {
         Console.Write("Titel: ");
-        var title = Console.ReadLine() ?? "";
-        Console.Write("Brødtekst: ");
-        var body = Console.ReadLine() ?? "";
-        Console.Write("Forfatter UserId: ");
-        var ok = int.TryParse(Console.ReadLine(), out int userId);
-        if (!ok) { Console.WriteLine("Ugyldigt UserId."); return; }
+        string title = Console.ReadLine() ?? "";
 
-        _ = await _users.GetSingleAsync(userId);
-        var created = await _posts.AddAsync(new Post { Title = title, Body = body, UserId = userId });
-        Console.WriteLine($"✔ Oprettet post Id={created.Id}");
+        Console.Write("Brødtekst: ");
+        string body = Console.ReadLine() ?? "";
+
+        Console.Write("Forfatter UserId: ");
+        bool ok = int.TryParse(Console.ReadLine(), out int userId);
+        if (!ok)
+        {
+            Console.WriteLine("Ugyldigt UserId.");
+            return;
+        }
+
+        // Tjek at brugeren findes
+        var user = await _users.GetSingleAsync(userId);
+        if (user == null)
+        {
+            Console.WriteLine("Ingen bruger fundet med det ID.");
+            return;
+        }
+
+        // Opret posten
+        var created = await _posts.AddAsync(new Post
+        {
+            Title = title,
+            Body = body,
+            UserId = userId
+        });
+
+        Console.WriteLine($"✔ Oprettet post med Id={created.Id}");
     }
 }

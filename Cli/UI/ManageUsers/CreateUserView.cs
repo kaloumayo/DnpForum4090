@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Entities;
 using RepositoryContracts;
@@ -15,20 +14,18 @@ public class CreateUserView
     public async Task RunAsync()
     {
         Console.Write("Brugernavn: ");
-        var name = Console.ReadLine() ?? "";
-        Console.Write("Password: ");
-        var pw = Console.ReadLine() ?? "";
+        string userName = Console.ReadLine() ?? "";
 
-        // simpelt dup-tjek
-        bool exists = _users.GetMany()
-            .Any(u => u.UserName.Equals(name, StringComparison.OrdinalIgnoreCase));
-        if (exists)
+        Console.Write("Adgangskode: ");
+        string password = Console.ReadLine() ?? "";
+
+        if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrWhiteSpace(password))
         {
-            Console.WriteLine("Brugernavn er optaget.");
+            Console.WriteLine("Brugernavn og adgangskode må ikke være tomme.");
             return;
         }
 
-        var created = await _users.AddAsync(new User { UserName = name, Password = pw });
-        Console.WriteLine($"✔ Oprettet bruger med Id={created.Id}");
+        User created = await _users.AddAsync(new User { UserName = userName, Password = password });
+        Console.WriteLine($"✔ Oprettet bruger Id={created.Id}, Navn={created.UserName}");
     }
 }

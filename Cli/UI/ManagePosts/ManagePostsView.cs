@@ -33,7 +33,7 @@ public class ManagePostsView
                     await new CreatePostView(_posts, _users).RunAsync();
                     break;
                 case "2":
-                    await new ListPostsView(_posts).RunAsync();
+                    await new ListPostsView(_posts, _users).RunAsync();
                     break;
                 case "3":
                     await new SinglePostView(_posts, _users, _comments).RunAsync();

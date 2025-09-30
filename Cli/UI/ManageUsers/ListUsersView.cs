@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using System.Threading.Tasks;
 using RepositoryContracts;
 
 namespace Cli.UI.ManageUsers;
@@ -11,10 +13,17 @@ public class ListUsersView
 
     public Task RunAsync()
     {
-        Console.WriteLine("\n[Users]");
-        var list = _users.GetMany().OrderBy(u => u.Id).ToList();
-        if (list.Count == 0) Console.WriteLine("(ingen)");
-        foreach (var u in list) Console.WriteLine($"({u.Id}) {u.UserName}");
+        var all = _users.GetMany().ToList();
+        if (!all.Any())
+        {
+            Console.WriteLine("Ingen brugere fundet.");
+            return Task.CompletedTask;
+        }
+
+        Console.WriteLine("Brugere:");
+        foreach (var u in all.OrderBy(u => u.Id))
+            Console.WriteLine($"- [{u.Id}] {u.UserName}");
+
         return Task.CompletedTask;
     }
 }
